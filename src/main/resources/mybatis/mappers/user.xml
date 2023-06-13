@@ -11,8 +11,18 @@
 			values (seq_users_no.nextval,
 			        #{id},
 			        #{password},
-			        #{name} )
+			        #{userName},
+			        sysdate )
 		]]>
 	</insert>
-	
+
+	<select id="selectUser" parameterType="com.javaex.vo.UserVo" resultType="com.javaex.vo.UserVo">
+		<![CDATA[
+			select userno,userName
+			from users
+			where id=#{id}
+			and password = #{password}
+		]]>
+	</select>
+
 </mapper>

@@ -16,11 +16,22 @@ public class UserDao {
 	 public int insertUser(UserVo userVo) {
 	 System.out.println("UserDao.insert()");
 	 System.out.println(userVo);
-	 int count = sqlSession.selectOne("user.insert",userVo);
+	 int count = sqlSession.insert("user.insert",userVo);
 	 return count;
 	 
 	 
 	 }
+	 
+	 //로그인
+	 
+	 public UserVo selectUser(UserVo userVo) {
+		 System.out.println("UserDao.selectUser(userVo)");
+		 
+		 UserVo authVo = sqlSession.selectOne("user.selectUser",userVo);
+		 System.out.println(authVo);
+		 return authVo;
+	 }
+	 
 	 
 
 }

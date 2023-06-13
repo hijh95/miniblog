@@ -20,7 +20,7 @@
 
 
 		<div>
-			<form id="joinForm" method="post"
+			<form id="joinForm" method="get"
 				action="${pageContext.request.contextPath}/user/join">
 				<table>
 					<colgroup>

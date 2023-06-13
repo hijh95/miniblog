@@ -18,5 +18,16 @@ public class UserService {
 		int count = userDao.insertUser(userVo);
 		return count;
 	}
+	
+	//로그인
+	public UserVo login(UserVo userVo) {
+		System.out.println("UserService.login()");
+		System.out.println(userVo);
+		UserVo authUser = userDao.selectUser(userVo);
+		System.out.println(authUser);
+		return authUser;
+		
+		
+	}
 
 }
