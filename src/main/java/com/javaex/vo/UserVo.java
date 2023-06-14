@@ -1,30 +1,31 @@
 package com.javaex.vo;
 
 public class UserVo {
-	private int no;
+	private int userno;
 	private String id;
 	private String password;
 	private String userName;
 
 	public UserVo() {
 		super();
+	
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserVo(int no, String id, String password, String userName) {
+	public UserVo(int userno, String id, String password, String userName) {
 		super();
-		this.no = no;
+		this.userno = userno;
 		this.id = id;
 		this.password = password;
 		this.userName = userName;
 	}
 
-	public int getNo() {
-		return no;
+	public int getUserno() {
+		return userno;
 	}
 
-	public void setNo(int no) {
-		this.no = no;
+	public void setUserno(int userno) {
+		this.userno = userno;
 	}
 
 	public String getId() {
@@ -53,7 +54,9 @@ public class UserVo {
 
 	@Override
 	public String toString() {
-		return "UserVo [no=" + no + ", id=" + id + ", password=" + password + ", userName=" + userName + "]";
+		return "UserVo [userno=" + userno + ", id=" + id + ", password=" + password + ", userName=" + userName + "]";
 	}
+	
 
+	
 }

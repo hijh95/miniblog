@@ -18,6 +18,7 @@
 		<!--메인 해더 자리 -->
 
 		<c:import url="/WEB-INF/views/includes/main-header.jsp"></c:import>
+		
 		<form id="search-form">
 			<fieldset>
 				<input type="text" name="keyword">
